@@ -1,0 +1,58 @@
+// Data Types overview
+
+/* Built in data types:
+  - Numbers (int, double)
+  - String (String) 
+  - Booleans (bool)
+  - Lists (List, also known as array)
+  - Sets (Set)
+  - Maps (Map)
+  - The value null (Null)
+  - Runes (Runes; often replaced by the characters API)
+  - Symbols (Symbol)
+  
+  Note: 
+  - these data types also have built in attributes or methods
+  - will look at example attribute call and method call
+  
+*/
+
+// when u declare a variable in dart, and the do variablename.
+// intellisense will show u all attribute and methods available
+// with that data type
+
+// void main(){
+//   var s1 = 'This is a string';
+//   print(s1);
+// //   print(s1.);  
+// }
+
+/* But what is the difference between an attribute and a method
+
+-- Attribute
+- It is a piece of information or data about the instance.
+- For example, length of a string var
+
+-- Method
+- A method performs some actions on the object
+- It often retuns a new object, for example a uppoer or lower case
+    version of a string.
+
+Note: many methods won't transform an object 'in-place', meaning 
+  the original variable remains unchanged annd an assignment must
+  be used. But u can change original object if u do object = object.method;
+
+To differentiate attribute and method, attributes usually dont have
+a parenthisis call.
+
+*/
+
+void main(){
+  var myName = 'Jose';
+  print(myName.length);
+  print(myName.toUpperCase());
+  print(myName);  //methods dont transform original object
+                  // and u can assign transform to other object
+  var upperName = myName.toUpperCase();
+  print(upperName);
+}
