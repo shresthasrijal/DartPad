@@ -1,0 +1,38 @@
+import 'dart:math';
+
+// create main function
+void main(){
+  print("hello");
+  //add
+  print(1+1);
+  //subtract
+  print(10-2);
+  //multiple
+  print(3*3);
+  //divide
+  print(4/2);
+  print(10/0); // dividing by zero in dart wont be error. Gives infinity
+  print(0/10);  // just gives 0
+  
+// exponentials -- u have to import math library
+  // pow function
+  print(pow(2,4));
+  
+// comments for single line = 2 forward slashes //
+
+// multiline comments = /* ... */ and anything in between is a comment
+  
+ /* yo my name is Srijal
+    and ur moma so fat 
+    i had to write a multi line comment
+    to make the joke 
+*/
+
+ // U can do ctrl + / to turn highlighted lines into comments
+// U can also do it to uncomment lines
+
+//   int a = 1;
+//   int b  = 2;
+//   print(a+b);
+  
+}
