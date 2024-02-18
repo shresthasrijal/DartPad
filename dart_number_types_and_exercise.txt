@@ -1,0 +1,42 @@
+Dart Number 
+
+void main(){
+  var numberone = 13;
+  int numbertwo = 7;
+  double numberthree = 12.1;
+  print(numberthree);
+  
+//   you can also have scientific notation for number like num+E+3
+  var expNum = 1.2e3;
+  print(expNum);
+  
+// stringverion of number
+  var stringNum =  "14.7";
+  print(stringNum);
+  print(stringNum.runtimeType);
+  
+// Conver string to a number type
+var convertedNum = double.parse(stringNum);
+  print(convertedNum.runtimeType);
+  print(convertedNum);  
+}  
+
+// exercise 
+void main() {
+//  Given the double below, assign it 
+//  to a new variable where its rounded to the 
+//  nearest integer. 
+var someNum = 3.1;
+print(someNum);
+  
+var roundNum = someNum.round();
+print(roundNum);
+
+// BONUS QUESTION; In the cases of 0.5, how can you
+// ensure its rounded up or down?
+var funcNum = someNum.floor();
+print(funcNum);
+  
+var func2Num = someNum.ceil();
+print(func2Num);
+}
